@@ -3,14 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Buefy from 'buefy'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-Vue.use(Buefy)
 
 Vue.prototype.$http = axios
 Vue.prototype.$currentEnv = process.env
+Vue.prototype.$delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
