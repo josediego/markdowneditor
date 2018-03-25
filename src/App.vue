@@ -124,7 +124,7 @@ h1,h2,h3,h4,h5,h6{
   width: 40rem;
   max-width: 100%;
   height: 400px;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0 1rem;
   font-size: 70%;
   transition: all .4s;
