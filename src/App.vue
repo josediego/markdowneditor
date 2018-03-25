@@ -295,6 +295,39 @@ footer{
   }
 }
 
+@media screen and (max-width: 620px) {
+  #app-wall {
+    padding-top: 2rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .folder {
+    width: 40rem;
+    max-width: 100%;
+    padding: 0 1rem;
+    height: 10rem;
+    margin-bottom: 4rem;
+    .files-list {
+      height: 110px;
+    }
+    .file:not(.create) {
+      display: inline-block;
+      width: 50%;
+      .file-icon, .file-detail {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .folder .file:not(.create) {
+    display: block;
+    width: 100%;
+  }
+}
+
 // ANIMATIONS
 @keyframes blink{
   from{

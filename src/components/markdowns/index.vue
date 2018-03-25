@@ -3,8 +3,8 @@
       <div class="folder">
         <header>Markdowns<div class="buttons"></div></header>
           <div class="files-list">
-            <div class="file">
-              <div class="file-new" @click="createNewMarkdown">
+            <div class="file create" @click="createNewMarkdown">
+              <div class="file-new">
                 <i class="fa fa-plus"></i> {{ selectedMarkdown._id ? 'New File' : 'Creating new file...' }}
               </div>
             </div>
